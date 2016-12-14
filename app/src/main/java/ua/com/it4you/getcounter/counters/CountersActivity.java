@@ -1,4 +1,4 @@
-package ua.com.it4you.getcounter;
+package ua.com.it4you.getcounter.counters;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import ua.com.it4you.getcounter.R;
+
+public class CountersActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
