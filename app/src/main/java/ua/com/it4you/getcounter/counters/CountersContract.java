@@ -16,7 +16,7 @@ public interface CountersContract {
 
         void showCounters(List<Counter> counters);
 
-        void showAddCounter();
+//        void showAddCounter();
 
         boolean isActive();
 
@@ -26,7 +26,7 @@ public interface CountersContract {
 
         void loadCounters(boolean forceUpdate);
 
-        void addNewCounter();
+//        void addNewCounter();
 
     }
 }

@@ -2,6 +2,9 @@ package ua.com.it4you.getcounter.counters;
 
 import android.support.annotation.NonNull;
 
+import java.util.List;
+
+import ua.com.it4you.getcounter.data.Counter;
 import ua.com.it4you.getcounter.data.source.CountersDataSource;
 
 /**
@@ -31,14 +34,24 @@ public class CountersPresenter implements CountersContract.Presenter {
     @Override
     public void loadCounters(boolean forceUpdate) {
 
+        if (forceUpdate) {
+            mCountersRepository.refreshCounters();
+        }
+
+        mCountersRepository.getCounters(new CountersDataSource.LoadCountersCallback() {
+            @Override
+            public void onCountersLoaded(List<Counter> counters) {
+                mCountersView.showCounters(counters);
+            }
+        });
     }
 
 //    private void loadCounters(boolean forceUpdate, ) {
 //
 //    }
 
-    @Override
-    public void addNewCounter() {
-        
-    }
+//    @Override
+//    public void addNewCounter() {
+//
+//    }
 }

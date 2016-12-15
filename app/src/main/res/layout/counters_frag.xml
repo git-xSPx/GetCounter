@@ -6,8 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ua.com.it4you.getcounter.MainActivityFragment"
-    tools:showIn="@layout/activity_main">
+    tools:context="ua.com.it4you.getcounter.counters.CountersFragment"
+    tools:showIn="@layout/counters_act">
 
     <ListView
         android:layout_width="match_parent"

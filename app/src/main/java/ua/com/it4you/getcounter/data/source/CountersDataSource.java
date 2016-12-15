@@ -16,14 +16,14 @@ public interface CountersDataSource {
 
         void onCountersLoaded(List<Counter> counters);
 
-        void onDataNotAvailable();
+//        void onDataNotAvailable();
     }
 
     interface GetCounterCallback {
 
         void onCounterLoaded(Counter counter);
 
-        void onDataNotAvailable();
+//        void onDataNotAvailable();
     }
 
     void getCounters(@NonNull LoadCountersCallback callback);
